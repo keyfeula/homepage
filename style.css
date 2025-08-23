@@ -8,31 +8,76 @@ html {
     font-family: system-ui, sans-serif;
     
     --dark-color: #0891b2;
+    --light-color: #ffffff;
 }
 
 body {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
 header {
     background: var(--dark-color);
-    transform-origin: bottom left;
-    transform: skewY(-5deg);
-    padding: min(10%, 5rem);
+    padding: min(3%, 2rem);
 }
 
 .about-me {
-    border: 1px solid black;
-    transform: skewY(5deg);
-    padding: 5rem;
+    padding: 1rem;
+    background: var(--light-color);
+    box-shadow: 0 0 10px black;
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.logo {
+    width: 1.2rem;
+    height: auto;
 }
 
 main {
-    
+    padding: min(3%, 2rem);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .screenshot {
+    padding: 2rem;
+    background: mediumslateblue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.project-info {
+    padding: 1rem;
+    flex: 1;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
     background: var(--dark-color);
+    padding: 1rem;
+    flex: 1;
 }
