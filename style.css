@@ -6,4 +6,33 @@
 
 html {
     font-family: system-ui, sans-serif;
+    
+    --dark-color: #0891b2;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 100vh;
+}
+
+header {
+    background: var(--dark-color);
+    transform-origin: bottom left;
+    transform: skewY(-5deg);
+    padding: min(10%, 5rem);
+}
+
+.about-me {
+    border: 1px solid black;
+    transform: skewY(5deg);
+    padding: 5rem;
+}
+
+main {
+    
+}
+
+footer {
+    background: var(--dark-color);
 }
