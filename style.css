@@ -6,78 +6,55 @@
 
 html {
     font-family: system-ui, sans-serif;
-    
-    --dark-color: #0891b2;
     --light-color: #ffffff;
+    --dark-color: #0891b2;
+    --shadow-color: #3a3a3a;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
-header {
-    background: var(--dark-color);
-    padding: min(3%, 2rem);
+.photo-header img {
+    box-shadow: 5px 5px 12px var(--shadow-color);
 }
 
-.about-me {
-    padding: 1rem;
-    background: var(--light-color);
-    box-shadow: 0 0 10px black;
-}
-
-.links {
-    display: flex;
-    justify-content: end;
-    gap: 1rem;
-}
-
-.logo {
-    width: 1.2rem;
+.social-links img {
+    width: 1.5rem;
     height: auto;
 }
 
-main {
-    padding: min(3%, 2rem);
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1rem;
-}
-
-.card {
-    box-shadow: 0 0 10px black;
-    display: flex;
-    flex-direction: column;
-}
-
-.card .screenshot {
+header {
     padding: 2rem;
-    background: mediumslateblue;
-    flex: 1;
+}
+
+.photo-header {
+    position: relative;
+}
+
+.photo-header .name {
+    position: absolute;
+    font-size: 4rem;
+    color: var(--light-color);
+    bottom: 0;
+    left: 5%;
+}
+
+.about-me {
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.social-links {
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-heading {
     text-align: center;
-}
-
-.project-info {
-    padding: 1rem;
-    flex: 1;
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-}
-
-footer {
-    background: var(--dark-color);
-    padding: 1rem;
-    flex: 1;
 }
