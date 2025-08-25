@@ -30,6 +30,17 @@ header {
     padding: 2rem;
 }
 
+.header-bg {
+    background: var(--dark-color);
+    min-width: 100%;
+    min-height: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%) scale(1.5) rotate(-15deg);
+    z-index: -1;
+}
+
 .photo-header {
     position: relative;
 }
