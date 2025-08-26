@@ -8,7 +8,11 @@ html {
     font-family: system-ui, sans-serif;
     --light-color: #ffffff;
     --dark-color: #0891b2;
-    --shadow-color: #3a3a3a;
+    --shadow-color: #474747;
+}
+
+h2 {
+    text-align: center;
 }
 
 img {
@@ -18,16 +22,17 @@ img {
 }
 
 .photo-header img {
-    box-shadow: 5px 5px 12px var(--shadow-color);
+    box-shadow: 3px 5px 12px var(--shadow-color);
 }
 
-.social-links img {
+.logo {
     width: 1.5rem;
     height: auto;
+    display: inline;
 }
 
 header {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .header-bg {
@@ -43,14 +48,15 @@ header {
 
 .photo-header {
     position: relative;
+    padding: 1rem;
 }
 
 .photo-header .name {
+    padding: 1rem;
     position: absolute;
     font-size: 4rem;
     color: var(--light-color);
     bottom: 0;
-    left: 5%;
 }
 
 .about-me {
@@ -66,6 +72,47 @@ header {
     margin-top: 1rem;
 }
 
-.about-heading {
+main {
+    padding: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.card {
+    box-shadow: 3px 5px 12px var(--shadow-color);
+}
+
+.project-name {
+    font-size: 1.2rem;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.project-description {
+    padding: 0 2rem 3rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-screenshot {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
     text-align: center;
+    color: var(--light-color);
+    background-color: var(--dark-color);
 }
