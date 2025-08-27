@@ -73,14 +73,14 @@ header {
 }
 
 main {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-top: 1rem;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .card {
@@ -115,4 +115,30 @@ main {
     text-align: center;
     color: var(--light-color);
     background-color: var(--dark-color);
+}
+
+footer {
+    background: var(--dark-color);
+    padding: 1rem;
+    color: var(--light-color);
+}
+
+.footer-heading {
+    margin-bottom: 1rem;
+}
+
+.contact-paragraph {
+    margin-bottom: 1rem;
+}
+
+.city-info {
+    margin-bottom: 1rem;
+}
+
+.footer-image {
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

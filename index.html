@@ -14,14 +14,20 @@
                         srcset="./assets/header-pic-mobile.jpg"
                         media="(max-width: 600px)"
                     >
-                    <img src="./assets/header-pic.jpg" alt="Rachel Williams">
+                    <source
+                        srcset="./assets/header-pic-tablet.jpg"
+                        media="(max-width: 1400px)"
+                    >
+                    <img 
+                        src="./assets/header-pic.jpg" 
+                        alt="Rachel Williams">
                 </picture>
                 <div class="name">Rachel Williams</div>
             </div>
             <section class="about-me">
                 <h2 class="about-heading">About Me</h2>
                 <p class="about-summary">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur, vero adipisicing elit. 
                     Iure culpa odio consectetur iste officia itaque. 
                     Quod a vero voluptates expedita adipisci reprehenderit dolore 
                     quam id neque, numquam voluptatem ea animi!
@@ -141,5 +147,41 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <section class="contact-info">
+                <h2 class="footer-heading">Contact Me</h2>
+                <p class="contact-paragraph">
+                   Please get in touch if you think our work 
+                   could be mutually beneficial!
+                </p>
+                <div class="contact-numbers">
+                    <p>1234 Penny Lane</p>
+                    <p class="city-info">Liverpool, England 0151</p>
+                    <p>555-555-5555</p>
+                    <p>rachel.williams.not.real@gmail.com</p>
+                </div>
+                <ul class="social-links">
+                    <li>
+                        <img class="logo" src="./assets/github-original.svg" alt="Github Logo">                        
+                    </li>
+                    <li>
+                        <img class="logo" src="./assets/linkedin-plain.svg" alt="LinkedIn Logo">
+                    </li>
+                    <li>
+                        <img class="logo" src="./assets/twitter-original.svg" alt="X Logo">
+                    </li>
+                </ul>
+            </section>
+            <div class="footer-image">
+                <img 
+                    srcset="./assets/footer-pic-mobile.jpg 700w,
+                            ./assets/footer-pic-tablet.jpg 1200w, 
+                            ./assets/footer-pic.jpg 2000w"
+                    sizes="(max-width: 1000px) 90vw, 500px"
+                    alt="Rachel Williams"
+                    src="./assets/footer-pic.jpg"
+                >
+            </div>
+        </footer>
     </body>
 </html>
