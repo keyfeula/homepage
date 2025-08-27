@@ -31,18 +31,23 @@ img {
     display: inline;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     padding: 1rem;
+    position: relative;
 }
 
 .header-bg {
     background: var(--dark-color);
-    min-width: 100%;
-    min-height: 50%;
     position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateY(-50%) scale(1.5) rotate(-15deg);
+    left: -50%;
+    bottom: 0;
+    width: 200vw;
+    height: 100%;
+    transform: translateY(-60vh) rotate(-15deg);
     z-index: -1;
 }
 
