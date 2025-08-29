@@ -16,11 +16,12 @@
                     >
                     <source
                         srcset="./assets/header-pic-tablet.jpg"
-                        media="(max-width: 1400px)"
+                        media="(max-width: 1000px)"
                     >
                     <img 
                         src="./assets/header-pic.jpg" 
-                        alt="Rachel Williams">
+                        alt="Rachel Williams"
+                    >
                 </picture>
                 <div class="name">Rachel Williams</div>
             </div>
@@ -173,14 +174,13 @@
                 </ul>
             </section>
             <div class="footer-image">
-                <img 
-                    srcset="./assets/footer-pic-mobile.jpg 700w,
-                            ./assets/footer-pic-tablet.jpg 1200w, 
-                            ./assets/footer-pic.jpg 2000w"
-                    sizes="(max-width: 1000px) 90vw, 500px"
-                    alt="Rachel Williams"
-                    src="./assets/footer-pic.jpg"
-                >
+                <picture>
+                    <source
+                        srcset="./assets/footer-pic-tablet.jpg"
+                        media="(max-width: 700px)"
+                    >
+                    <img src="./assets/footer-pic.jpg" alt="Rachel Williams">
+                </picture>
             </div>
         </footer>
     </body>
