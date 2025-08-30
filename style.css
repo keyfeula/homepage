@@ -39,6 +39,10 @@ body {
 
 header {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-bg {
@@ -106,7 +110,7 @@ main {
 }
 
 .project-description {
-    padding: 0 2rem 3rem;
+    padding: 0 2rem 2rem;
 }
 
 .project-links {
@@ -126,6 +130,10 @@ main {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: var(--dark-color);
     padding: 1rem;
     color: var(--light-color);
@@ -146,53 +154,37 @@ footer {
 .footer-image {
     margin-top: 1rem;
     padding: 1rem;
+    max-width: 400px;
 }
 
 footer > * {
     flex: 1;
 }
 
-@media (min-width: 600px) {
-
-    footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    header,
-    main,
-    footer {
-        padding: 2rem 4rem;
-    }
+@media (min-width: 500px) {
 
     header {
+        flex-direction: row;
         position: relative;
     }
 
-    .footer-image {
-        max-width: 40%;
-        margin: 0;
-    }
-
     .photo-header {
-        z-index: 0;
-        transform: translateX(100%);
+        min-width: 400px;
     }
 
     .about-me {
-        text-align: end;
-        padding: 2rem 15rem 2rem 2rem;
-        max-width: 80%;
-        position: absolute;
-        left: 30%;
-        top: 50%;
-        transform: translateX(-30%) translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: end;
         background: var(--light-color);
+        padding: 1rem;
         box-shadow: 3px 5px 15px var(--shadow-color);
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    header,
+    main, 
+    footer {
+        padding: 2rem;
     }
 }
