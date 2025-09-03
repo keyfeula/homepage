@@ -8,7 +8,7 @@ html {
     font-family: system-ui, sans-serif;
     --light-color: #ffffff;
     --dark-color: #0891b2;
-    --shadow-color: #474747;
+    --shadow-color: #8e8e8e;
 }
 
 h2 {
@@ -147,6 +147,10 @@ footer {
     margin-bottom: 1rem;
 }
 
+.contact-info {
+    padding: 1rem;
+}
+
 .city-info {
     margin-bottom: 1rem;
 }
@@ -155,6 +159,10 @@ footer {
     margin-top: 1rem;
     padding: 1rem;
     max-width: 400px;
+}
+
+.footer-image img {
+    box-shadow: 3px 5px 15px #034657;
 }
 
 footer > * {
