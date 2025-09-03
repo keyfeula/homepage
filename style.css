@@ -59,7 +59,7 @@ header {
 .photo-header {
     padding: 1rem;
     position: relative;
-    max-width: 500px;
+    max-width: 450px;
 }
 
 .name {
@@ -74,6 +74,7 @@ header {
 .about-me {
     margin-top: 1rem;
     line-height: 1.5;
+    padding: 1rem;
 }
 
 .social-links {
@@ -169,7 +170,7 @@ footer > * {
     flex: 1;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 650px) {
 
     header {
         flex-direction: row;
